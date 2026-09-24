@@ -1,0 +1,22 @@
+{
+  "stations": [
+    {
+      "station": "Sealdah",
+      "scheduled": "10:00",
+      "predicted": "10:08",
+      "delay_min": 8
+    },
+    {
+      "station": "Howrah Jn",
+      "scheduled": "10:42",
+      "predicted": "10:47",
+      "delay_min": 5
+    },
+    {
+      "station": "Barddhaman",
+      "scheduled": "12:05",
+      "predicted": "12:09",
+      "delay_min": 4
+    }
+  ]
+}

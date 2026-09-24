@@ -1,0 +1,30 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: deployment/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      # Uses local SQLite by default (no DATABASE_URL set). To run against
+      # Postgres locally instead, uncomment the db service below and set:
+      # - DATABASE_URL=postgresql://yatrasuchak:yatrasuchak@db:5432/yatrasuchak
+    volumes:
+      - ./:/app
+
+  # Optional local Postgres, for parity with Render's managed database.
+  # Uncomment this and the DATABASE_URL line above to use it.
+  # db:
+  #   image: postgres:16-alpine
+  #   environment:
+  #     - POSTGRES_USER=yatrasuchak
+  #     - POSTGRES_PASSWORD=yatrasuchak
+  #     - POSTGRES_DB=yatrasuchak
+  #   ports:
+  #     - "5432:5432"
+  #   volumes:
+  #     - pgdata:/var/lib/postgresql/data
+
+# volumes:
+#   pgdata:

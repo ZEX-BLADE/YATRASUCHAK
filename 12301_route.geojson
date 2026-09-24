@@ -1,0 +1,36 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "train_no": "12301",
+        "name": "Demo route (Sealdah - Howrah Jn - Barddhaman)"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [88.3697, 22.5697],
+          [88.3426, 22.5839],
+          [88.1500, 22.8200],
+          [87.8615, 23.2324]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "station": "Sealdah" },
+      "geometry": { "type": "Point", "coordinates": [88.3697, 22.5697] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "station": "Howrah Jn" },
+      "geometry": { "type": "Point", "coordinates": [88.3426, 22.5839] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "station": "Barddhaman" },
+      "geometry": { "type": "Point", "coordinates": [87.8615, 23.2324] }
+    }
+  ]
+}
